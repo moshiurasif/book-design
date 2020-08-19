@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+}
+.box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	background: navy;
+}
+.box1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: red;
+	color: #fff;
+	overflow: hidden;
+	border-right: 1px solid #fff;
+	
+}
+.sliding{
+	position: absolute;
+	top: 50%;
+	font-size: 8em;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: arial black;
+	animation: anim 15s linear infinite;
+	
+}
+@keyframes anim{
+	0%{
+		transform: translate(0%, -50%);
+	}
+	100%{
+		transform: translate(-50%, -50%);
+	}
+}
